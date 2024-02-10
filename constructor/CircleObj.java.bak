@@ -1,0 +1,9 @@
+
+
+public class CircleObj {
+    public static void main(String[] args) {
+        Circle obj1 = new Circle(20);
+	  obj1.area();
+    }
+
+}

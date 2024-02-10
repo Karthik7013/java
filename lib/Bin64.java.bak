@@ -1,0 +1,26 @@
+public class Bin64 {
+
+    int number;
+
+    Bin64(int i) {
+        this.number = i;
+    }
+
+    public int binary() {
+        int bin = 0;
+        double digit = 1;
+        while (this.number > 0) {
+            int rem = this.number % 2;
+            bin += (rem * digit);
+            digit = digit * 10;
+            this.number /= 2;
+        }
+        return bin;
+    }
+
+    public static void main(String[] args) {
+        Bin64 num = new Bin64(10);
+        System.out.println(num.binary());
+    }
+
+}
